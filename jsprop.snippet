@@ -1,0 +1,36 @@
+<CodeSnippet Format="1.1.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>prop</Title>
+    <Author>Sebastian Gomez</Author>
+    <Shortcut>prop</Shortcut>
+    <Description>Code snippet for a Javascript property</Description>
+	<HelpUrl>https://github.com/sebagomez/jsprop</HelpUrl>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+      <SnippetType>SurroundsWith</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <ToolTip>Property name</ToolTip>
+        <Default>property</Default>
+      </Literal>
+      <Literal>
+        <ID>internal</ID>
+        <ToolTip>Internal property</ToolTip>
+        <Default>p</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="JavaScript"><![CDATA[var $name$ = {
+	$internal$: "",
+	get: function(){
+		return this.$internal$;
+	},
+	set: function (value){
+		this.$internal$ = value;
+	}
+};]]></Code>
+  </Snippet>
+</CodeSnippet>
