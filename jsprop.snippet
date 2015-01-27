@@ -17,19 +17,13 @@
         <ToolTip>Property name</ToolTip>
         <Default>property</Default>
       </Literal>
-      <Literal>
-        <ID>internal</ID>
-        <ToolTip>Internal property</ToolTip>
-        <Default>p</Default>
-      </Literal>
     </Declarations>
     <Code Language="JavaScript"><![CDATA[var $name$ = {
-	$internal$: "",
-	get: function(){
-		return this.$internal$;
+	getValue: function(){
+		return this._value;
 	},
-	set: function (value){
-		this.$internal$ = value;
+	setValue: function (value){
+		this._value = value;
 	}
 };]]></Code>
   </Snippet>

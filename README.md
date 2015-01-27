@@ -3,16 +3,12 @@ Visual Studio 2013 snippet that creates C# like properties for Javascript
 
 I've encountered myself many times writing properties in Javascript of the like
 
- 
-
-
 	var _appIsSecure = {
-		secured: false,
-		get: function () {
-			return this.secured;
+		getValue: function () {
+			return this._value;
 		},
-		set: function (value) {
-			this.secured = value;
+		setValue: function (value) {
+			this._value = value;
 		}
 	};
 
@@ -33,4 +29,3 @@ or ask for the value of that property
 The [jsprop.snippet](jsprop.snippet) file adds an easy snippet of code to your Visual Studio 2013 solution, allowing you to just type "prop" + Tab and a simple template for a property will show up.
 
 It turned out to be pretty useful to me so I decided to put on GitHub. I hope it helps you too.
-
