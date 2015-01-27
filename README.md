@@ -10,7 +10,7 @@ I've encountered myself many times writing properties in Javascript of the like
 		setValue: function (value) {
 			this._value = value;
 		}
-	};
+	};*
 
 That kind of "property" allows me to define a namespace thaks to [WinJS.Namespace.define](https://msdn.microsoft.com/en-us/library/windows/apps/br212667.aspx) and use the following code:
 
@@ -29,3 +29,5 @@ or ask for the value of that property
 The [jsprop.snippet](jsprop.snippet) file adds an easy snippet of code to your Visual Studio 2013 solution, allowing you to just type "prop" + Tab and a simple template for a property will show up.
 
 It turned out to be pretty useful to me so I decided to put on GitHub. I hope it helps you too.
+
+(*): Taken from [http://ejohn.org/blog/javascript-getters-](http://ejohn.org/blog/javascript-getters-and-setters/and-setters/)
