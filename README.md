@@ -30,4 +30,4 @@ The [jsprop.snippet](jsprop.snippet) file adds an easy snippet of code to your V
 
 It turned out to be pretty useful to me so I decided to put on GitHub. I hope it helps you too.
 
-(*): Taken from [http://ejohn.org/blog/javascript-getters-](http://ejohn.org/blog/javascript-getters-and-setters/and-setters/)
+(*): Taken from [http://ejohn.org/blog/javascript-getters-and-setters/and-setters/](http://ejohn.org/blog/javascript-getters-and-setters/and-setters/)
