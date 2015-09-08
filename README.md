@@ -4,13 +4,14 @@ Visual Studio 2013 snippet that creates C# like properties for Javascript
 I've encountered myself many times writing properties in Javascript of the like
 
 	var _appIsSecure = {
-		getValue: function () {
-			return this._value;
+		internal: '',
+		get: function () {
+			return this.internal;
 		},
-		setValue: function (value) {
-			this._value = value;
+		set: function (value) {
+			this.internal = value;
 		}
-	};*
+	};
 
 That kind of "property" allows me to define a namespace thaks to [WinJS.Namespace.define](https://msdn.microsoft.com/en-us/library/windows/apps/br212667.aspx) and use the following code:
 
@@ -30,4 +31,6 @@ The [jsprop.snippet](jsprop.snippet) file adds an easy snippet of code to your V
 
 It turned out to be pretty useful to me so I decided to put on GitHub. I hope it helps you too.
 
-(*): Taken from [http://ejohn.org/blog/javascript-getters-and-setters/](http://ejohn.org/blog/javascript-getters-and-setters/)
+References:  
+[JavaScript Getters and Setters](http://ejohn.org/blog/javascript-getters-and-setters/)  
+[Defining getters and setters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters)
