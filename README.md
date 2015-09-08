@@ -31,6 +31,9 @@ The [jsprop.snippet](jsprop.snippet) file adds an easy snippet of code to your V
 
 It turned out to be pretty useful to me so I decided to put on GitHub. I hope it helps you too.
 
-References:  
+###Install
+To install it checkout the jsprop.snippet file. Open Visual Studio, go to Tools -> Code Snippets Manager and import the snippet under JavaScript.
+
+###References:
 [JavaScript Getters and Setters](http://ejohn.org/blog/javascript-getters-and-setters/)  
 [Defining getters and setters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Defining_getters_and_setters)
